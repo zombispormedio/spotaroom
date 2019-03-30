@@ -22,7 +22,7 @@ const HomeCards = () => {
   return (
     <HomeCardsContainer>
       {data.map(item => (
-        <HomeCard key={item.id} {...item} />
+        <HomeCard key={`${item.id}_${item.adId}`} {...item} />
       ))}
     </HomeCardsContainer>
   );

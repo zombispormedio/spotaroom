@@ -71,7 +71,7 @@ HomeCard.propTypes = {
     homecardHidpi: PropTypes.string
   }).isRequired,
   currencySymbol: PropTypes.string.isRequired,
-  pricePerMonth: PropTypes.string.isRequired
+  pricePerMonth: PropTypes.number.isRequired
 };
 
 export default HomeCard;

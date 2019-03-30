@@ -27,7 +27,7 @@ export const CardImage = styled.img`
   &:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   }
-  width: 15rem;
+  width: auto;
   height: 10rem;
   margin-right: 2rem;
   ${mq.mobile} {
