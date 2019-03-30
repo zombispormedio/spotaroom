@@ -7,11 +7,11 @@
     "format": "prettier --write \"**/*.{js,jsx,json,css,scss,graphql}\""
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json}": [
+    "**/*.{js,jsx,json}": [
       "prettier --write",
       "git add"
     ],
-    "src/**/*.js": [
+    "**/*.js": [
       "npm run lint"
     ]
   },
