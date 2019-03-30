@@ -2,6 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
+    "start:server": "node api/server.js",
     "lint": "eslint \"**/*.js\"",
     "format": "prettier --write \"**/*.{js,jsx,json,css,scss,graphql}\""
   },

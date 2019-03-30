@@ -4,7 +4,7 @@
   "description": "Spotahome Client side challenge",
   "main": "index.js",
   "scripts": {
-    "start": "env-cmd ./.env  webpack-dev-server --config ./webpack.development.config.js  --hot",
+    "start": "env-cmd ./.dev.env  webpack-dev-server --config ./webpack.development.config.js  --hot",
     "build": "env-cmd ./.prod.env webpack --config ./webpack.production.config.js"
   },
   "repository": {

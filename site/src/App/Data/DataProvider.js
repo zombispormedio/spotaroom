@@ -5,13 +5,13 @@ import { isGraphQLProvider } from './utils';
 
 const url = process.env.API_URL;
 
-export const DataContext = React.createContext({
-  url
-});
+console.log(url)
+
+export const DataContext = React.createContext({});
 
 const withDataFetchProvider = () => {
   const DataFetchProvider = ({ children }) => (
-    <DataContext.Provider>{children} </DataContext.Provider>
+    <DataContext.Provider value={{ url }}>{children} </DataContext.Provider>
   );
 
   DataFetchProvider.propTypes = {
