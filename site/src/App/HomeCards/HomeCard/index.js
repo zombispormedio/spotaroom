@@ -19,8 +19,7 @@ const Price = styled.span`
   font-family: 'Luckiest Guy', cursive;
   background-color: #000;
   color: ${props => props.theme.accent};
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding: 0.5rem;
   border-radius: 8px;
   font-size: 2.5rem;
 `;

@@ -41,6 +41,9 @@ module.exports = {
       filename: './index.html',
       appMountId: 'root',
       title: 'Spotaroom',
+	  meta: [{
+		name: "viewport",  content: "width=device-width, user-scalable=no"
+	  }],
       links: [
         {
           href:
