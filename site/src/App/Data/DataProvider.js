@@ -5,7 +5,7 @@ import { isGraphQLProvider } from './utils';
 
 const url = process.env.API_URL;
 
-console.log(url)
+console.log(url);
 
 export const DataContext = React.createContext({});
 

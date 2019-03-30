@@ -13,7 +13,14 @@ router.get(
     const result = await homecardService.getRelevantHomeCards(filter);
     res.json({
       homecards: result.map(
-        pick(['id', 'adId', 'currencySymbol', 'pricePerMonth', 'photoUrls', 'title'])
+        pick([
+          'id',
+          'adId',
+          'currencySymbol',
+          'pricePerMonth',
+          'photoUrls',
+          'title'
+        ])
       )
     });
   })
