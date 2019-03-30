@@ -1,0 +1,38 @@
+{
+  "name": "api",
+  "version": "0.0.0",
+  "description": "Spotahome Server Side Challenge",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zombispormedio/spotaroom.git"
+  },
+  "keywords": [
+    "backend"
+  ],
+  "author": "Xavier Serrano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zombispormedio/spotaroom/issues"
+  },
+  "homepage": "https://github.com/zombispormedio/spotaroom#readme",
+  "dependencies": {
+    "apollo-resolvers": "^1.4.1",
+    "apollo-server-express": "^2.4.8",
+    "awilix": "^4.2.1",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "got": "^9.6.0",
+    "graphql-tools": "^4.0.4",
+    "morgan": "^1.9.1",
+    "ramda": "^0.26.1",
+    "serialize-error": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "extends": [
+    "airbnb",
+    "plugin:node/recommended",
+    "prettier",
+    "prettier/babel",
+    "prettier/react",
+    "plugin:sonarjs/recommended"
+  ],
+  "plugins": ["babel", "prettier", "sonarjs"],
+  "rules": {
+    "prettier/prettier": "error",
+    "node/no-unsupported-features/es-syntax": "off",
+    "react/jsx-filename-extension": "off"
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  }
+}
