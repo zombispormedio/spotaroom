@@ -1,0 +1,38 @@
+import React from 'react';
+import { Provider, createClient } from 'urql';
+import PropTypes from 'prop-types';
+import { isGraphQLProvider } from './utils';
+
+const url = process.env.API_URL;
+
+export const DataContext = React.createContext({
+  url
+});
+
+const withDataFetchProvider = () => {
+  const DataFetchProvider = ({ children }) => (
+    <DataContext.Provider>{children} </DataContext.Provider>
+  );
+
+  DataFetchProvider.propTypes = {
+    children: PropTypes.node.isRequired
+  };
+  return DataFetchProvider;
+};
+
+const withDataGraphqlProvider = () => {
+  const client = createClient({
+    url: `${url}/graphql`
+  });
+  const DataGraphqlProvider = ({ children }) => (
+    <Provider value={client}>{children} </Provider>
+  );
+  DataGraphqlProvider.propTypes = {
+    children: PropTypes.node.isRequired
+  };
+  return DataGraphqlProvider;
+};
+
+export const DataProvider = isGraphQLProvider()
+  ? withDataGraphqlProvider()
+  : withDataFetchProvider();

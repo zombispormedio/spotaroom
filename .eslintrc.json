@@ -11,7 +11,8 @@
   "rules": {
     "prettier/prettier": "error",
     "node/no-unsupported-features/es-syntax": "off",
-    "react/jsx-filename-extension": "off"
+    "react/jsx-filename-extension": "off",
+    "import/prefer-default-export": "off"
   },
   "env": {
     "browser": true,

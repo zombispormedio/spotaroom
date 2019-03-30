@@ -3,6 +3,7 @@ module.exports = `
     homecardHidpi: String
   }
   type HomeCard {
+    id: Int
     adId: Int
     currencySymbol: String
     pricePerMonth: Int

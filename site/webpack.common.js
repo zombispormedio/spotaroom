@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ManifestPlugin = require('webpack-manifest-plugin');
 
@@ -39,12 +40,19 @@ module.exports = {
       template: require('html-webpack-template'),
       filename: './index.html',
       appMountId: 'root',
-      title: 'Spotaroom'
+      title: 'Spotaroom',
+      links: [
+        {
+          href:
+            'https://fonts.googleapis.com/css?family=Luckiest+Guy|Open+Sans:400,600,700',
+          rel: 'stylesheet'
+        }
+      ]
     }),
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV),
-      'process.env.EXECUTOR': JSON.stringify(process.env.EXECUTOR || 'graphql'),
-      'process.env.GATEWAY_URL': JSON.stringify(process.env.GATEWAY_URL)
+      'process.env.PROVIDER': JSON.stringify(process.env.PROVIDER || 'graphql'),
+      'process.env.API_URL': JSON.stringify(process.env.API_URL)
     })
   ]
 };
