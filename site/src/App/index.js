@@ -13,7 +13,8 @@ const AppWrapper = styled.div`
 `;
 
 const AppContent = styled.div`
-  overflow-y: auto;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
   flex: 1 1 auto;
   position: relative;
 `;
